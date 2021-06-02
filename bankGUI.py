@@ -1,8 +1,9 @@
 import PySimpleGUI as sg
+from PySimpleGUI.PySimpleGUI import Titlebar
 
-layout = [[sg.Text('Välkommen till illenbockens bank')], [sg.Button('Gå vidare till banken')]]
+layout = [[sg.Text('Välkommen till illenbockens bank')], [sg.Button('Gå vidare till banken')],]
 
-window = sg.Window('demo', layout, margins=(500,300))
+window = sg.Window('illenbockens bank', layout, margins=(500,300))
 
 while True:
     event, values = window.read()
